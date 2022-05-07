@@ -9,14 +9,18 @@
 int extern string_calc[];
 int main()
 {
-    int a;
+    /* Calc.c */
     // printf("Tong chuoi: %d", sum_string(string_calc));
     // printf("\nMax chuoi: %d", max_string(string_calc));
     // printf("\nMin chuoi: %d", min_string(string_calc));
     // printf("\nTim chuoi -> ");
     // search_(string_calc);
 
-    dec_to_bin(30);
-    dec_to_bin(112);
+    /* Convert.c */
+    // dec_to_bin(254);
+    // printf("\n");
+    // dec_to_hex(254);
+
+    
     return 0;
 }
