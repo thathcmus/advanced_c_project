@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "convert.h": "c"
+        "convert.h": "c",
+        "m_string.h": "c",
+        "calc.h": "c"
     }
 }

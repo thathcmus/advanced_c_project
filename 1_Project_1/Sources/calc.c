@@ -1,47 +1,46 @@
 #include "../Headers/calc.h"
 
-int string_calc[] = {50, 51, 52, 53, 54, 55, 60, 57, 58, 59, 60, 60, 62, 63, 64, 65, 66, 67, 68, 69};
 
-int get_size(int string[])
-{
-    return sizeof(string_calc)/sizeof(string[0]);
-}
+// unsigned long long get_size(int string[])
+// {
+//     return sizeof(string) / sizeof(string[0]);
+// }
 
-int sum_string(int string[])
+int sum_string(int string[], int n)
 {
     int sum = 0;
-    for (int i = 0; i < get_size(string); i++)
+    for (int i = 0; i < n; i++)
     {
         sum += string[i];
     }
     return sum;
 }
 
-int max_string(int string[])
+int max_string(int string[], int n)
 {
     int max = string[0];
-    for (int i = 1; i < get_size(string); i++)
+    for (int i = 1; i < n; i++)
         if((string[i]) > max)
             max = string[i];
     return max;
 }
 
-int min_string(int string[])
+int min_string(int string[], int n)
 {
     int min = string[0];
-    for (int i = 1; i < get_size(string); i++)
+    for (int i = 1; i < n; i++)
         if((string[i]) < min)
             min = string[i];
     return min;
 }
 
-void search_(int string[])
+void search_(int string[], int n)
 {
     int s;
     int count = 0;
     printf("Nhap so can tim: ");
     scanf("%d", &s);
-    for (int i = 1; i < get_size(string); i++)
+    for (int i = 1; i < n; i++)
     {
         if(string[i] == s)
         {
